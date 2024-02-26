@@ -13,7 +13,7 @@ function errorConnectToServer (callback) {
     //console.log(db);
     // Verify we got a good "db" object
     if (db) {
-       _db = db.db("MERN-Training"); 
+       _db = db.db("MongoDBTest"); 
     }
     else{
       errorConnectToServer(callback)
@@ -27,7 +27,7 @@ module.exports = {
       //console.log(db);
       // Verify we got a good "db" object
       if (db) {
-        _db = db.db("MERN-Training");        
+        _db = db.db("MongoDBTest");        
       }
       return callback(err);
     });
