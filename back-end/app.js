@@ -30,6 +30,10 @@ try {
     //   const authRoute = require("../routes/auth.js");
     //   app.use(authRoute.authRoute);
 
+
+    const LibraryRoutes = require("./routes/library/library")
+    app.use(LibraryRoutes);
+
 } catch (error) {
     console.log(error);
 }
