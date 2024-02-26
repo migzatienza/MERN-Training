@@ -4,9 +4,9 @@ const helmet = require("helmet");
 const path = require("path");
 const app = express();
 const cors = require("cors");
-require("dotenv").config({ path: "../.env" });
+require("dotenv").config({ path: ".env" });
 const port = process.env.PORT || 5060;
-const dbo = require("../db/conn");
+const dbo = require("./db/conn");
 
 var bodyParser = require("body-parser");
 const axios = require('axios');
@@ -27,8 +27,8 @@ var cron = require('node-cron');
 try {
     //ROUTES
     //#region Training Management
-      const authRoute = require("../routes/auth.js");
-      app.use(authRoute.authRoute);
+    //   const authRoute = require("../routes/auth.js");
+    //   app.use(authRoute.authRoute);
 
 } catch (error) {
     console.log(error);
